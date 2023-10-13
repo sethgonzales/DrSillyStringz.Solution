@@ -11,11 +11,11 @@
   @Html.HiddenFor(model => model.EngineerId)
 
   @Html.Label("Select Machine")
-  @Html.DropDownList("MachineId")
+  @Html.DropDownList("MachineId")<br /><br />
 
   <input type="submit" value="Save" />
 }
 
-<div class="navlinks" class="single-link">
+<div class="navlinks">
   <p>@Html.ActionLink("Back to list", "Index")</p>
 </div>

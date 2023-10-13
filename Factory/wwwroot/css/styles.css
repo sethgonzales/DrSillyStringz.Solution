@@ -35,7 +35,6 @@ body h2 {
   width: 100%;
   color: #484547;
   display: inline-block;
-
 }
 
 .navlinks-home:hover {
@@ -55,31 +54,25 @@ body h2 {
 .navlinks p {
   float: left;
   padding: 2%;
-  width: 33%;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.navlinks-back {
-  float: left;
-  padding: 2%;
   width: 100%;
   text-align: center;
+  font-size: large;
   box-sizing: border-box;
 }
 
-.navlinks-back {
-  text-align: center;
-  font-size: x-large;
+.two-links p {
+  margin-top: 5%;
+  width: 50%;
 }
 
-.navlinks-back a {
-  color: rgb(72, 69, 71);
+.four-links p {
+  margin-top: 5%;
+  width: 25%;
 }
-
 
 .lists a {
   color: rgb(65, 65, 65);
+  font-size: large;
 }
 
 .form {
