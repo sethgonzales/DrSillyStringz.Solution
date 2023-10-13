@@ -13,9 +13,10 @@
 
 @foreach (Machine machine in Model)
 {
-  <li>@Html.ActionLink($"{machine.Type}", "Details", new { id = machine.MachineId })</li>
+  <li class="lists">@Html.ActionLink($"{machine.Type}", "Details", new { id = machine.MachineId })</li>
 }
-<div class="navlinks">
+
+<div class="navlinks-2">
   <p>@Html.ActionLink("Add New Machine", "Create")</p>
   <p>@Html.ActionLink("Home", "Index", "Home")</p>
 </div>
