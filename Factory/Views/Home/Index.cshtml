@@ -17,10 +17,10 @@
   {
     <p>No engineers have been added yet.</p>
   }
-  <ul class="lists">
+  <ul>
     @foreach (Engineer engineer in Model["engineers"])
     {
-      <li>@Html.ActionLink(@engineer.Name, "Details", "Engineers", new { id = @engineer.EngineerId })</li>
+      <li class="lists">@Html.ActionLink(@engineer.Name, "Details", "Engineers", new { id = @engineer.EngineerId })</li>
     }
   </ul>
 </div>
@@ -35,10 +35,10 @@
   {
     <p>No machines have been added yet.</p>
   }
-  <ul class="lists">
+  <ul>
     @foreach (Machine machine in Model["machines"])
     {
-      <li>@Html.ActionLink(@machine.Type, "Details", "Machines", new { id = @machine.MachineId })</li>
+      <li class="lists">@Html.ActionLink(@machine.Type, "Details", "Machines", new { id = @machine.MachineId })</li>
     }
   </ul>
 </div>

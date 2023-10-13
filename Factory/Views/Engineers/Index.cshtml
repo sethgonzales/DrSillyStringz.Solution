@@ -12,10 +12,10 @@
 }
 else
 {
-  <ul class="lists">
+  <ul>
   @foreach (Engineer engineer in Model)
     {
-      <li>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId })</li>
+      <li class="lists">@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId })</li>
     }
   </ul>
 }

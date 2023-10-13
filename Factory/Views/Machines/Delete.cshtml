@@ -5,7 +5,7 @@
 @model Factory.Models.Machine
 
 <h2>Are you sure you want to delete @Model.Type?</h2>
-<h4 class="light-text">You cannot undo this.</h4>
+<h4 class="light-text">You cannot undo this.</h4><br />
 
 @using (Html.BeginForm())
 {
@@ -13,5 +13,5 @@
 }
 
 <div class="navlinks">
-  @Html.ActionLink("Back to List", "Index")
+  <p>@Html.ActionLink("Back to list", "Index")</p>
 </div>
