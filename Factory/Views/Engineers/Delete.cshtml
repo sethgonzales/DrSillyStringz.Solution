@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@model ToDoList.Models.Engineer
+
+<h2>Are you sure you want to delete @Model.Name?</h2>
+<h4 class="light-text">You cannot undo this.</h4>
+
+@using (Html.BeginForm())
+{
+  <input type="submit" value="Delete" />
+}
+
+<div class="navlinks-back">
+  @Html.ActionLink("Back to List", "Index")
+</div>

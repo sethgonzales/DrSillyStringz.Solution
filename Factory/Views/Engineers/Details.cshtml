@@ -6,7 +6,6 @@
 @model Factory.Models.Engineer
 
 <h2>About @Html.DisplayFor(model => model.Name) : <span class="light-text">Engineer</span></h2>
-<hr />
 <p class="description">@Html.DisplayFor(model => model.Details)</p>
 
 @if (@Model.JoinEntities.Count == 0)

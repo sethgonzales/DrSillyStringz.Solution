@@ -1,0 +1,32 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Machine
+
+<h2>Edit</h2>
+
+<h4>
+  <h4>Edit this Machine</h4>
+
+  <div class="form">
+    @using (Html.BeginForm())
+    {
+      @Html.HiddenFor(model => model.MachineId)
+
+      <div class="form-block">
+        @Html.LabelFor(model => model.Type)
+        @Html.EditorFor(model => model.Type)
+      </div>
+      <div class="form-block">
+        @Html.LabelFor(model => model.Details)
+        @Html.TextAreaFor(model => model.Details, new { @class = "textbox" })
+      </div>
+      <div class="form-block">
+        <input type="submit" value="Save" />
+      </div>
+    }
+  </div>
+  <div class="navlinks-back">
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+  </div>
