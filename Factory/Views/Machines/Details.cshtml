@@ -8,19 +8,20 @@
 <h2>Machine Details</h2>
 
 <h3>@Model.Type</h3>
+<p class="description">@Html.DisplayFor(model => model.Details)</p>
 
 @if (@Model.JoinEntities.Count == 0)
 {
-  <p>This machine is not licensed to be operated by any engineers</p>
+  <p>This machine is not licensed to be repaired by any engineers</p>
 }
 else
 {
-  <h4>This machine is licensed to be operated by:</h4>
+  <h4>This machine is licensed to be repaired by:</h4>
   <ul>
   @foreach (EngineerMachine join in Model.JoinEntities)
     {
       <li>@join.Engineer.Name</li>
-      @using (Html.BeginForm("DeleteJoin", "Tags"))
+      @using (Html.BeginForm("DeleteJoin", "Machines"))
       {
         @Html.Hidden("joinId", @join.EngineerMachineId)
         <input type="submit" value="Delete" />
@@ -31,7 +32,7 @@ else
 
 <div class="navlinks">
   <p>@Html.ActionLink("Back to list", "Index")</p>
-  <p>@Html.ActionLink("Add a New Engineer to this Machine", "AddEngineer", new { id = Model.MachineId })</p>
+  <p>@Html.ActionLink("Add Engineer to this Machine", "AddEngineer", new { id = Model.MachineId })</p>
   <p>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId })</p>
   <p>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId })</p>
 </div>

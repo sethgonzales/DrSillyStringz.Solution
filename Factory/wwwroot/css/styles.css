@@ -16,61 +16,36 @@ body h2 {
   padding: 0.75%;
 }
 
-.lists a {
-  color: rgb(65, 65, 65);
-}
-
-.form {
-  font-size: large;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-.form-block {
-  width: 100%;
-  margin-bottom: 2%;
-  box-sizing: border-box;
-}
-
-.textbox {
-  width: 100%;
-  height: 100px;
-}
-
-.description {
-  color: rgb(44, 43, 43);
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 150%;
-}
-
-.light-text {
-  color: rgb(44, 43, 43);
-  font-style: italic;
-  font-weight: lighter;
+.splash-container {
+  width: 46%;
+  margin: auto;
+  margin: 2%;
+  padding: 0.75%;
+  float: left;
+  border: solid black;
 }
 
 .navlinks-home {
   text-align: center;
-  font-size: 200%;
-  font-style: italic;
+  background-color: rgb(236, 236, 236);
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #00000000;
+  width: 100%;
+  color: #484547;
+  display: inline-block;
+
+}
+
+.navlinks-home:hover {
+  background-color: rgb(200, 200, 200);
 }
 
 .navlinks-home a {
   color: rgb(72, 69, 71);
-}
-
-.navlinks-home p {
-  float: left;
-  padding: 2%;
-  width: 50%;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.navlinks {
-  text-align: center;
-  font-size: x-large;
+  font-size: larger;
+  text-decoration: none;
 }
 
 .navlinks a {
@@ -100,23 +75,40 @@ body h2 {
 
 .navlinks-back a {
   color: rgb(72, 69, 71);
-
 }
 
-.note {
-  width: 70%;
-  margin: auto;
-  margin-top: 2%;
+
+.lists a {
+  color: rgb(65, 65, 65);
+}
+
+.form {
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form-block {
+  width: 100%;
   margin-bottom: 2%;
-  padding: 0.75%;
-  background-color: rgba(0, 208, 255, 0.261);
-  border-left: 5px solid rgb(0, 204, 255);
   box-sizing: border-box;
 }
 
-.note a {
-  color: rgb(72, 69, 71);
-  font-size: large;
+.textbox {
+  width: 100%;
+  height: 100px;
+}
+
+.description {
+  color: rgb(44, 43, 43);
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 150%;
+}
+
+.light-text {
+  color: rgb(44, 43, 43);
+  font-style: italic;
+  font-weight: lighter;
 }
 
 #header {

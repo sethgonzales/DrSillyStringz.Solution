@@ -4,11 +4,10 @@
 
 @model Factory.Models.Machine
 
-<h4>Add a New Machine</h4>
+<h2>Add a New Machine</h2>
 
 <p>@Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
-<p>@Html.ValidationMessageFor(model => model.Details, "", new { @class = "text-danger", @style = "font-weight: 600;" })
-</p>
+<p>@Html.ValidationMessageFor(model => model.Details, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
 
 <div class="form">
   @using (Html.BeginForm())
