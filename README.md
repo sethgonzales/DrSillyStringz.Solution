@@ -35,14 +35,14 @@ This application organizes and builds a repository of Engineers and Machines the
 
 ### Setting up the database
 * If not already configured, install the Entity Framework Core tool `dotnet-ef` using the command `$ dotnet tool install --global dotnet-ef --version 6.0.0` in your terminal. This will allow for data migrations and updates to the project's database.
-* Recreate the database by running the command `$ dotnet ef database update` in your terminal.
-* Navigate to your MySQLWorkbench to double check that your database has been built without error.
 
 ### Running the project
 * Navigate to this project's production directory `Factory`.
+* Recreate the database by running the command `$ dotnet ef database update` in your terminal.
+* Navigate to your MySQLWorkbench to double check that your database has been built without error.
 * In the command line, run the command `$ dotnet run` or `$ dotnet watch run` to compile and execute the application.
    * To compile the application without running it, use the following command: `$ dotnet build`.
-* Begin populating your database with stylists and clients. Use navigational links for quick access to different pages.
+* Begin populating your database. Use navigational links for quick access to different pages.
 
 ## Known Bugs
 
